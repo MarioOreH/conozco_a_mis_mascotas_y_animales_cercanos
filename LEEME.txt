@@ -1,0 +1,25 @@
+CONOZCO A MIS MASCOTAS Y ANIMALES CERCANOS — Diccionario digital interactivo
+====================================================================
+
+FLUJO:  PORTADA  →  PERRO · GATO · POLLO · PÁJARO · CONEJO  →  JUEGO  →  FINAL
+
+CÓMO ABRIRLO
+  Abre index.html en el navegador (o sube la carpeta a cualquier hosting).
+  No necesita instalación.
+
+DÓNDE VA CADA ARCHIVO
+  assets/img/portada.jpg        Imagen de presentación (también vale .png / .webp / .jpeg)
+  assets/video/perro.mp4    Video de la lección (4:3, ej. 960x720, sin audio)
+  assets/video/perro_card.mp4    Video del juego (cuadrado, ej. 480x480, liviano)
+  ... lo mismo para: gato, pollo, pajaro, conejo
+
+  Si falta la portada, se muestra una portada provisional.
+  Si falta el video de un tema, ese tema se omite automáticamente.
+
+CAMBIAR / AGREGAR TEMAS
+  Todo está en un solo lugar: la lista ITEMS al inicio de js/main.js
+  (nombre, emoji, color, frase, pregunta del juego y nombres de los videos).
+
+PREPARAR VIDEOS (opcional, requiere ffmpeg)
+  ./preparar_videos.sh mi_video.mov perro
+  Genera perro.mp4 (960x720) y perro_card.mp4   (480x480), sin audio.
